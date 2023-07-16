@@ -4,11 +4,11 @@ import matplotlib.pyplot as plt
 
 from data_preprocess import normalize
 
-signal = np.loadtxt("artificial_dataset/myfile.csv", delimiter=",")
+signal = np.loadtxt("artificialecg_dataset/myfile.csv", delimiter=",")
 print(signal.shape[1])
  
-# for i in signal.shape[0]:
-#     signal[i] = normalize(signal[i]) * 0.5
+for i in signal.shape[0]:
+    signal[i] = normalize(signal[i]) * 0.5
 
 real_data = np.load("real_dataset/dataset.npy")
 print(shape(real_data))

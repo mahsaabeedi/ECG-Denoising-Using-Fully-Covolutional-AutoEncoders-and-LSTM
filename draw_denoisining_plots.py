@@ -10,7 +10,7 @@ from filter_wavelet import waveletSmooth
 
 np.random.seed(1)
 
-real_dataset = np.load("real_dataset/dataset.npy")[0:1]
+real_dataset = np.load("realecg_dataset/dataset.npy")[0:1]
 
 plt.style.use("seaborn")
 
@@ -43,6 +43,7 @@ def draw_plot_with_stats(dataset, label):
     print("MSE: %f" % mean_squared_error(dataset, original))
     print("STN: %f [dB]" % signal_to_noise(dataset, original))
     draw_plot(dataset, label)
+
 
 
 model = load_model("networks tuned/network 0 pretraining 50 tuning")

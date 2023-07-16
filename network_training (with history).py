@@ -49,4 +49,4 @@ def do_training(neurons_per_layer, layers):
               batch_size=64, verbose=2)
 
 
-do_training(140, 2)
+do_training(126, 2)

@@ -52,4 +52,4 @@ def do_training(neurons_per_layer):
 
         model.save("networks/network %i x %i.net" % (neurons_per_layer, layers), overwrite=True)
 
-do_training(140)
+do_training(126)

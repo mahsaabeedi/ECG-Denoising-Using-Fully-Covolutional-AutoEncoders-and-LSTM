@@ -1,6 +1,7 @@
 from numpy import log10, var
 
 
+
 def signal_to_noise(_noised, _original):
     signal = _original
     noise = _noised - signal

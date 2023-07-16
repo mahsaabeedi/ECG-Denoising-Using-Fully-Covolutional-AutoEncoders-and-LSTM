@@ -5,7 +5,7 @@ from data_preprocess import preprocess_data
 
 np.random.seed(1)
 
-real_dataset = np.load("real_dataset/dataset.npy")[3:4]
+real_dataset = np.load("realecg_dataset/dataset.npy")[3:4]
 noised, original = preprocess_data(real_dataset, noise_level=0)
 
 artificial_dataset = np.loadtxt("artificial_dataset/myfile.csv", delimiter=",")[0:25]

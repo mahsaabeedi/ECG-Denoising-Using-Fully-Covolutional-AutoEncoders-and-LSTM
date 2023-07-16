@@ -7,7 +7,7 @@ from data_preprocess import preprocess_data, reshape_into_samples
 from filter_bandpass import filter_bandpass
 from filter_wavelet import waveletSmooth
 
-real_dataset = np.load("real_dataset/dataset.npy")[48:58]
+real_dataset = np.load("realecg_dataset/dataset.npy")[48:58]
 
 points_per_sample = 600
 

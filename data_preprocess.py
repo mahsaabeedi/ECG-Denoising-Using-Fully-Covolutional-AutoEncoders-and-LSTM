@@ -32,6 +32,7 @@ def preprocess_data(dataset, noise_level=0.5):
         original.append(normalized_sample)
         noised.append(noised_sample)
 
+
     noised = np.array(noised).flatten()
     original = np.array(original).flatten()
     return noised, original

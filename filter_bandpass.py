@@ -21,6 +21,6 @@ def filter_bandpass(data, low, high, fs, order=5):
         sos = create_bandpass_filter(low, high, fs, order=order)
         y = sosfiltfilt(sos, sample)
         output.append(y)
-    #y = sosfilt(sos, data)
+    y = sosfilt(sos, data)
     return np.array(output)
 
