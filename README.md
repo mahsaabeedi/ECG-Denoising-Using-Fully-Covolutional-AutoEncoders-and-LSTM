@@ -27,10 +27,3 @@ We explore several variations of the Recurrent LSTM architecture to find the opt
 
 The results of the different model configurations are documented in the `results` directory. This includes performance metrics, loss curves, and denoising visualizations.
 
-## Contributing
-
-Contributions to this project are welcome! If you find any issues or have ideas for improvements, please open an issue or submit a pull request.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
