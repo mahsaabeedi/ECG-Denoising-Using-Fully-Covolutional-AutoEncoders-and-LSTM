@@ -15,14 +15,6 @@ The dataset used in this project is the publicly available [MIT-BIH Arrhythmia D
 
 We explore several variations of the Recurrent LSTM architecture to find the optimal configuration for ECG denoising. These variations include different numbers of LSTM layers, varying hidden units, dropout rates, and batch normalization layers. The model architectures can be found in the `models` directory.
 
-## Usage
-
-1. Clone this repository to your local machine
-2. Install the required dependencies. We recommend using a virtual environment
-3. Preprocess the dataset and configure the model architecture according to your preference by modifying the code in the `train.py` file.
-4. Train the model
-5. Evaluate the trained models and visualize the denoising performance using the provided evaluation scripts and notebooks.
-
 ## Results
 
 The results of the different model configurations are documented in the `results` directory. This includes performance metrics, loss curves, and denoising visualizations.
