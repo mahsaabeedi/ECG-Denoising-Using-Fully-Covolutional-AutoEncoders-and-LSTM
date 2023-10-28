@@ -2,7 +2,7 @@
 
 - [Introduction](#introduction)
 - [Reference](#Reference)
-- ["FULLY CONVOLUTIONAL NETWORK"](#FULLY CONVOLUTIONAL NETWORK)
+- [#FULLY CONVOLUTIONAL NETWORK](#FULLY CONVOLUTIONAL NETWORK)
 - [Deep recurrent neural network (DRNN)](#Deep recurrent neural network (DRNN))
 - [Data](#Data)
 - [Experiments design](#Experiments design)
