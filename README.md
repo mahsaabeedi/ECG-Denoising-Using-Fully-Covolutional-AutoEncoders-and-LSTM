@@ -5,8 +5,8 @@
 - [Fully Convolutional Network](#Fully-Convolutional-Network)
 - [Deep Recurrent Neural Network (DRNN)](#Deep-Recurrent-Neural-Network-(DRNN))
 - [Data](#Data)
-- [Experiments_Design](#Experiments-design)
-- [Evaluation_Metrics](#Evaluation-Metrics)
+- [Experiments Design](#Experiments-design)
+- [Evaluation Metrics](#Evaluation-Metrics)
 - [Results](#results)
 
 
@@ -24,7 +24,7 @@ The electrocardiogram (ECG) is an efficient and noninvasive indicator for arrhyt
 
 
 
-## Fully-Convolutional-Network
+## Fully Convolutional Network
 
 FCN represents a distinct variant of CNN. CNNs typically comprise convolutional layers, activation functions, max-pooling layers, and a fully connected layer. The convolutional layers employ filters to generate feature maps describing input data characteristics. These layers share filter parameters among different feature maps, significantly reducing the overall parameter count when compared to the fully connected layer, where each neuron connects to all preceding layer outputs.
 
@@ -35,7 +35,7 @@ The key distinction between FCN and CNN lies in the absence of the fully connect
 To ensure precise signal alignment between input and output, our FCN model omits pooling layers, which might lead to loss of detailed structural and textural information within the network.
 
 
-## Deep-Recurrent-Neural-Network-(DRNN)
+## Deep Recurrent Neural Network (DRNN)
 
 The method based on recurrent networks was employed, following the paper's description. An LSTM module with 64 units was utilized, with the return_sequence parameter set to True to ensure the complete sequence is returned, maintaining the same shape as the input tensor. Following the LSTM, there are two fully connected layers (Dense layers), each comprising 64 neurons and utilizing the ReLU activation function. The final layer consists of a single neuron in a Dense layer with a linear activation function. The chosen loss function is MSE, consistent with the original paper.
 
@@ -48,7 +48,7 @@ on the preprocessed data from the previous stage, networks of various sizes were
 
 All the experiments performed used the QT Database from Physionet. This dataset contains real ECG records that represent a wide range of QRS and ST-T morphologies in all the possible variability. It is composed of 105 ECG signals with 15-min and two channels each one sampled at 250 Hz. The experiments performed used all the records available in this dataset. In order to add real baseline drifts to the QT database, real BLW signals from the MIT-BIH Noise Stress Test Database (NSTDB) were used. The database contains 30 minutes of 12 ECG recordings and 3 recordings of typical noise in stress tests at 360 Hz sampling frequency. These noises are baseline wander produced by the patient’s breathing, muscle artifact and electrode motion artifact. The ECG records are randomly corrupted with the noise present in the three noise channels. The noise records were recorded during physical stress tests, with electrodes placed on the limbs in positions where ECG cannot be acquired.
 
-## Experiments-design
+## Experiments Design
 
 An experiment benchmark for BLW removal has been designed, facilitating the evaluation of various methods using an identical test set and consistent conditions. To accomplish this, all 105 signals from the QT Database were oversampled, increasing the frequency from 250 Hz to 360 Hz to match the NSTDB sampling rate. Heartbeats were subsequently extracted based on expert annotations. However, a minor issue with incorrect annotations occasionally caused the combination of consecutive beats. To address this, beats exceeding 512 samples (equivalent to 1422.22 ms) were filtered out.
 
@@ -59,7 +59,7 @@ To introduce noise into the ECG signals, the NSTDB's noise data, including BLW d
 Having a separate test set for signals ensures the reliability of the results when employing learning algorithms and prevents any potential advantages over classical methods. When injecting noise, the same procedure as the NSTDB was followed, randomly introducing values ranging from 0.2 to twice the maximum peak value of the ECG signal.
 
 
-## Evaluation-Metrics
+## Evaluation Metrics
 
 According to studies published in, distance-based metrics are considered the most suitable for evaluating signal similarity. To assess the methods' performance in minimizing distortion on ECG signal morphology when removing BLW, the following metrics were employed: Absolute maximum distance (MAD), sum of the square of distances (SSD), percentage root-mean-square difference (PRD), and Cosine Similarity.
 
