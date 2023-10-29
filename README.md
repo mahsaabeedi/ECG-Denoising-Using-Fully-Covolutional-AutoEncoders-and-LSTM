@@ -5,8 +5,8 @@
 - [Fully Convolutional Network](#Fully-Convolutional-Network)
 - [Deep Recurrent Neural Network (DRNN)](#Deep-Recurrent-Neural-Network-(DRNN))
 - [Data](#Data)
-- [Experiments_Design](#Experiments design)
-- [Evaluation_Metrics](#Evaluation Metrics)
+- [Experiments Design](#Experiments_design)
+- [Evaluation Metrics](#Evaluation_Metrics)
 - [Results](#results)
 
 
