@@ -2,11 +2,11 @@
 
 - [Introduction](#introduction)
 - [Reference](#Reference)
-- [#FULLY CONVOLUTIONAL NETWORK](#FULLY CONVOLUTIONAL NETWORK)
-- [Deep recurrent neural network (DRNN)](#Deep recurrent neural network (DRNN))
+- [Fully Convolutional Network](#Fully-Convolutional-Network)
+- [Deep Recurrent Neural Network (DRNN)](#Deep-Recurrent-Neural-Network-(DRNN))
 - [Data](#Data)
-- [Experiments design](#Experiments design)
-- [Evaluation Metrics](#Evaluation Metrics)
+- [Experiments_Design](#Experiments design)
+- [Evaluation_Metrics](#Evaluation Metrics)
 - [Results](#results)
 
 
