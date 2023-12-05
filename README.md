@@ -34,6 +34,10 @@ The key distinction between FCN and CNN lies in the absence of the fully connect
 
 To ensure precise signal alignment between input and output, our FCN model omits pooling layers, which might lead to loss of detailed structural and textural information within the network.
 
+## LSTM 
+LSTMs are capable of learning long-term dependencies, especially in sequence prediction problems. LSTM has feedback connections, i.e., it is capable of processing the entire sequence of data, apart from single data points such as images.The central role of an LSTM model is held by a memory cell known as a ‘cell state’ that maintains its state over time. The cell state is the horizontal line that runs through the top of the below diagram. It can be visualized as a conveyor belt through which information just flows, unchanged.
+Information can be added to or removed from the cell state in LSTM and is regulated by gates. These gates optionally let the information flow in and out of the cell. It contains a pointwise multiplication operation and a sigmoid neural net layer that assist the mechanism.
+The sigmoid layer gives out numbers between zero and one, where zero means ‘nothing should be let through’, and one means ‘everything should be let through’.
 
 ## Deep Recurrent Neural Network (DRNN)
 
@@ -42,6 +46,7 @@ The method based on recurrent networks was employed, following the paper's descr
 on the preprocessed data from the previous stage, networks of various sizes were evaluated to identify the one with optimal performance while maintaining suitability for large-scale training. To achieve this, two parameters were subject to analysis: "width" (the number of neurons/units in each layer) and "depth" (the number of ReLU layers in the network). By introducing two LSTM layers with 140 neurons in each layer and a ReLU layer between them, the objective is to extend the network with multiple ReLU layers, ranging from 0 to 9, and conduct training with 16, 32, 64, and 140 neurons in each layer.
 
 ![Alt text](image-3.png)
+
 
 
 ## Data
